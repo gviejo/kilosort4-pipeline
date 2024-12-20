@@ -2,7 +2,7 @@
 # @Author: Guillaume Viejo
 # @Date:   2024-11-08 14:32:37
 # @Last Modified by:   Guillaume Viejo
-# @Last Modified time: 2024-11-12 12:48:52
+# @Last Modified time: 2024-12-05 14:22:49
 from kilosort import run_kilosort, DEFAULT_SETTINGS
 from kilosort.io import load_probe
 import os, sys
@@ -36,9 +36,10 @@ datasets = np.hstack([
 
 datasets = np.unique(datasets)
 
-for s in datasets:
+# for s in datasets:
 # for s in ['LMN/A1411/A1411-200907A']:
 # for s in ['LMN/A6701/A6701-201207A']:
+for s in ["LMN-ADN/A5010/A5010-201003A","LMN-ADN/A5002/A5002-200304A","LMN-ADN/A5002/A5002-200306A","LMN-ADN/A5043/A5043-230303A","LMN-ADN/A5044/A5044-240329A"]:
 
     # path = os.path.join(data_directory, "OPTO", s)
     path = os.path.join(data_directory, s)
